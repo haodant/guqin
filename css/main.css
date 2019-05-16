@@ -293,6 +293,18 @@ header {
   -o-background-size: cover;
 }
 
+.banner {
+  background: url(../img/Picture2.jpg) no-repeat center center;
+  width: 100%;
+  padding: 20px 10px 60px 10px;
+  height: 30vh;
+  overflow: hidden;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
 .header-info {
   position: absolute;
   bottom: 0;
