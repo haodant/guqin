@@ -20,17 +20,17 @@ p, .lead {
 }
 
 h1 {
-  font-size: 55px;
-  line-height: 55px;
+  font-size: 5vw;
+  line-height: 5vw;
   letter-spacing: -1px;
   color: #ffffff;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 40px;
-  line-height: 40px;
-  etter-spacing: -0.5px;
+  font-size: 4vw;
+  line-height: 5vw;
+  letter-spacing: -0.5px;
   color: #ffffff;
   font-weight: 700;
 }
@@ -88,7 +88,6 @@ a:hover, a:focus {
 	background: #a98175; /* Firefox */
 	color: #FFFFFF;
 }
-
 
 /*------------------Buttons---------------------*/
 .btn:focus {
@@ -296,8 +295,8 @@ header {
 .banner {
   background: url(../img/Picture2.jpg) no-repeat center center;
   width: 100%;
-  padding: 20px 10px 60px 10px;
-  height: 30vh;
+  padding: 0px 10px 0px 0px;
+  height: 250px;
   overflow: hidden;
   background-size: cover;
   -webkit-background-size: cover;
@@ -647,6 +646,11 @@ footer {
   line-height: 1.33;
   padding: 16px 13px;
   letter-spacing: 0px;
+}
+
+h1 {
+   font-size: 25px;
+   line-height: 25px;
 }
 
 #be-the-first {
