@@ -235,10 +235,10 @@ a:hover, a:focus {
     border: 0px solid rgba(0, 0, 0, 0);
     background: #a98175;
     margin: auto;
-    min-height: 60px;
+    min-height: 50px;
     padding-top: 8px;
     position: fixed;
-    top: -60px;
+    top: -100px;
     transition: top 0.4s ease 0s;
 }
 
@@ -260,7 +260,7 @@ a:hover, a:focus {
 .nav > li > a {
     position: relative;
     display: block;
-    padding: 10px 10px;
+    padding: 6px 6px;
 }
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
@@ -272,7 +272,7 @@ a:hover, a:focus {
 }
 
 .logo img {
-	width: 100px;
+	width: 60px;
 }
 
 
@@ -283,7 +283,7 @@ a:hover, a:focus {
 header {
   background: url(../img/Picture2.jpg) no-repeat center center;
   width: 100%;
-  padding: 20px 10px 60px 10px;
+  padding: 18px 10px 60px 10px;
   height: 100vh;
   overflow: hidden;
   background-size: cover;
@@ -295,8 +295,8 @@ header {
 .banner {
   background: url(../img/Picture2.jpg) no-repeat center center;
   width: 100%;
-  padding: 0px 10px 0px 0px;
-  height: 250px;
+  padding: 18px 10px 0px 0px;
+  height: 220px;
   overflow: hidden;
   background-size: cover;
   -webkit-background-size: cover;
