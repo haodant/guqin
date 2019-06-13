@@ -295,7 +295,7 @@ header {
 .banner {
   background: url(../img/Picture2.jpg) no-repeat center center;
   width: 100%;
-  padding: 18px 10px 0px 0px;
+  padding: 18px 10px 0px 10px;
   height: 220px;
   overflow: hidden;
   background-size: cover;
