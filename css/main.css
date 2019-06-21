@@ -11,7 +11,12 @@
 /* ==========================================================================
    Global styles
    ========================================================================== */
-h1, h2, h3, h4, h5, h6, p, .btn, .navbar-nav a, .form-control, .list-inline, small, #pricing {
+html {
+ //this defines what 1rem is
+ font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
+}
+
+h1, h2, h3, h4, h5, h6, p, .btn, .navbar-nav a, .form-control, .list-inline, small {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -20,39 +25,39 @@ p, .lead {
 }
 
 h1 {
-  font-size: 5vw;
-  line-height: 5vw;
+  font-size: 6rem;
+  line-height: 6rem;
   letter-spacing: -1px;
   color: #ffffff;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 3vw;
-  line-height: 3.5vw;
+  font-size: 4rem;
+  line-height: 4rem;
   letter-spacing: -0.5px;
   color: #ffffff;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 1.6rem;
+  line-height: 2rem;
   letter-spacing: 0px;
   color: #231f20;
   font-weight: 700;
 }
 
 .lead {
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 2rem;
+  line-height: 2.6rem;
   color: #ffffff;
   font-weight: 400;
 }
 
 p {
-  font-size: 19px;
-  line-height: 22px;
+  font-size: 1.8rem;
+  line-height: 2rem;
   color: #929496;
   font-weight: 400;
 }
@@ -283,7 +288,7 @@ a:hover, a:focus {
 header {
   background: url(../img/Picture2.jpg) no-repeat center center;
   width: 100%;
-  padding: 18px 10px 60px 10px;
+  padding: 1.8rem 1rem 2rem 1rem;
   height: 100vh;
   overflow: hidden;
   background-size: cover;
@@ -306,83 +311,49 @@ header {
 
 .header-info {
   position: absolute;
-  bottom: 0;
+  top: 50%;
   width: 100%;
   left: 0;
   right: 0;
   margin-left: 0px;
   margin-bottom: 12%;
+  transform: translate(0, -50%);
 }
 
-.signin {
-  padding-top: 9px;
-}
-
-
-.mouse-icon {
-    border: 2px solid #fff;
-    border-radius: 16px;
-    display: block;
-    height: 50px;
-    margin: -100px auto 50px;
-    position: relative;
-    width: 30px;
-    z-index: 10;
-}
-.mouse-icon .scroll {
-    animation-delay: 0s;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-name: scrolling;
-    animation-play-state: running;
-    animation-timing-function: linear;
-}
-.mouse-icon .scroll {
-    background: #fff none repeat scroll 0 0;
-    border-radius: 10px;
-    height: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    top: 4px;
-    width: 4px;
-}
 @keyframes scrolling {
-0% {
-    opacity: 0;
-    top: 5px;
-}
-30% {
-    opacity: 1;
-    top: 10px;
-}
-100% {
-    opacity: 0;
-    top: 25px;
-}
+  0% {
+      opacity: 0;
+      top: 5px;
+  }
+  30% {
+      opacity: 1;
+      top: 10px;
+  }
+  100% {
+      opacity: 0;
+      top: 25px;
+  }
 }
 
 .pad-xl {
-	padding: 200px 0px;
+	padding: 20rem 0px;
 }
 
 .pad-lg {
-	padding: 160px 0px;
+	padding: 16rem 0px;
 }
 
 .pad-sm {
-	padding: 80px 0px;
+	padding: 8rem 0px;
 }
 
 .pad-xs {
-	padding: 30px 0px;
+	padding: 3rem 0px;
 }
-
-
 
 #be-the-first {
   background: url(../img/57654461.jpg) #231f20 no-repeat center center fixed;
-  min-height: 300px;
+  min-height: 30rem;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -409,43 +380,13 @@ hr.line {
 	color: #fdc05d;
 }
 
-.iphone {
-    position: relative;
-    height: 200px;
-}
-
-.iphone img {
-    margin: 0 auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 100%;
-    max-width: 440px;
-}
-
 
 #invite {
   background: #f2f2f2;
 }
 
-.fa-envelope-o {
-  color: #a98175;
-  font-size: 22px;
-  display: block;
-  padding-top: 15px;
-  width: 60px;
-  height: 60px;
-  border: 2px solid #a98175;
-  -moz-border-radius: 30px;
-  -o-border-radius: 30px;
-  -webkit-border-radius: 30px;
-  border-radius: 30px;
-  margin: auto;
-}
 
-
-
-.news-container {
+.news-container:not(:last-child) {
   padding: 10px 0px 20px;
   border-bottom: 1px dotted #d9d9d9;
 }
@@ -479,7 +420,7 @@ footer {
 
 .pricing-table {
   background: transparent;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
   margin-top: 0px;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -516,34 +457,11 @@ footer {
   border-top-right-radius: 10px;
 }
 
-.price {
-    background: none repeat scroll 0 0 #231f20;
-    color: #FFFFFF;
-    font-size: 32px;
-    font-weight: bold;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-
-.pricing-table:hover li.price  {
-  background: #303236;
-  -webkit-transition: all 0.85s ease-in-out;
-  -moz-transition: all 0.85s ease-in-out;
-  -o-transition: all 0.85s ease-in-out;
-  transition: all 0.85s ease-in-out;
-}
-
-.price small {
-  font-weight: 300;
-  color: #929496;
-}
-
 .info {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 1.3rem;
   color: #929496;
   background: #ffffff;
 }
@@ -551,8 +469,8 @@ footer {
 .features {
   color: #231f20;
   font-weight: bold;
-  padding-top: 12px;
-  padding-bottom: 15px;
+  padding-top: 1.2rem;
+  padding-bottom: 1.5rem;
   border-bottom: 1px dotted #E8EAEA;
   background: #ffffff
 }
@@ -562,13 +480,13 @@ footer {
 }
 
 .features.last {
-  padding-top: 17px;
-  padding-bottom: 20px;
+  padding-top: 1.7rem;
+  padding-bottom: 2rem;
 }
 
 .features.last a {
 	color: #70cbce;
-	font-size: 14px;
+	font-size: 1.4rem;
 	letter-spacing: 1px;
 }
 
@@ -585,86 +503,89 @@ footer {
 }
 
 
-
-
-/* ==========================================================================
-   Form styles
-   ========================================================================== */
-.form-control {
-    background-color: #FFFFFF;
-    background-image: none;
-    border: 0px solid transparent;
-    border-radius: 4px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-    color: #929496;
-    display: block;
-    font-size: 15px;
-    height: 60px;
-    line-height: 1.42857;
-    padding: 6px 12px;
-    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+/*-----------------------photo gallery-------------------------------------*/
+.gallery {
+  width: 100%;
+  padding: .5rem 0;
 }
-
-.form-control::-moz-placeholder {
-    color: #d9d9d9;
-    font-size: 15px;
-    opacity: 1;
-}
-
-.form-control::-webkit-placeholder, .form-control::-o-placeholder {
-    color: #d9d9d9;
-    font-size: 15px;
-    opacity: 1;
-}
-
-.form-control::-o-placeholder {
-    color: #d9d9d9;
-    font-size: 15px;
-    opacity: 1;
-}
-
-
-
 
 /* ==========================================================================
    Mobile styles
    ========================================================================== */
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
 
-.btn-lg {
-  font-size: 12.5px;
-  line-height: 1.33;
-  padding: 16px 13px;
-  letter-spacing: 0px;
-}
+  .btn-lg {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    padding: 16px 13px;
+    letter-spacing: 0px;
+  }
 
 
-.btn-wide {
-  width: 100%;
-  font-size: 12.5px;
-  line-height: 1.33;
-  padding: 16px 13px;
-  letter-spacing: 0px;
-}
+  .btn-wide {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 1.33;
+    padding: 16px 13px;
+    letter-spacing: 0px;
+  }
 
-h1 {
-   font-size: 25px;
-   line-height: 25px;
-}
+  h1 {
+     font-size: 3.12rem;
+     line-height: 3.12rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+  }
+
+  .lead {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
 
 #be-the-first {
       background-attachment: scroll;
   }
 
+  .navbar {
+    display: none;
+  }
+
+  .news-img {
+    padding-right: 20px;
+    width: 100%;
+  }
+
+  .book-img {
+    width: 15rem;
+  }
 }
 
 
 /* Landscape phone to portrait tablet */
 @media (min-width: 481px) and (max-width: 767px) {
+  h1 {
+     font-size: 2.8rem;
+     line-height: 2.8rem;
+  }
+
+  h2 {
+     font-size: 2.6rem;
+     line-height: 3rem;
+  }
 
 #be-the-first {
       background-attachment: scroll;
+  }
+
+  .navbar {
+    display:none;
   }
 
 }
