@@ -272,6 +272,23 @@ a:hover, a:focus {
 	width: 60px;
 }
 
+.logo-text {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.2rem;
+	font-weight: 300;
+	color: #ffffff;
+	text-decoration: none;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.logo-text:hover {
+	color: #ffffff;
+	text-decoration: none;
+	opacity: 0.8;
+}
+
 .carousel-container {
   display: block;
   width: 100%;
@@ -360,11 +377,11 @@ header {
 }
 
 .pad-lg {
-	padding: 16rem 0px;
+	padding: 8rem 0px;
 }
 
 .pad-sm {
-	padding: 8rem 0px;
+	padding: 4rem 0px;
 }
 
 .pad-xs {
@@ -403,6 +420,7 @@ hr.line {
 
 #invite {
   background: #f2f2f2;
+  padding: 4rem 0px;
 }
 
 
@@ -413,6 +431,7 @@ hr.line {
 
 .news-img {
   padding-right: 20px;
+  width: 450px !important;
 }
 
 footer {
@@ -527,6 +546,13 @@ footer {
 .gallery {
   width: 100%;
   padding: .5rem 0;
+}
+
+.gallery-fixed-height {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
 }
 
 /* ==========================================================================
